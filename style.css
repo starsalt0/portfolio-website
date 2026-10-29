@@ -18,3 +18,34 @@ h2 {
     justify-content: center;
     background-color: #c0e1ff;
 }
+
+ .img-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+ 
+}
+
+  .img-btn img {
+    width: 200px;         
+    display: block;
+  }
+  .img-btn:hover img {
+    filter: brightness(1.15);   
+  }
+  .img-btn:active img {
+    transform: scale(0.95);    
+  }
+
+  .menu{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .left-btn {
+   
+    margin-right: auto; 
+  }
+  
