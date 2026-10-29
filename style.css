@@ -1,0 +1,20 @@
+.homegallery{
+    display: inline-block;
+    background-color: #c0e1ff;
+}
+
+header{
+    background-color: #98ceff;
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    
+}
+
+.see-all-button {
+    display: flex;
+    justify-content: center;
+    background-color: #c0e1ff;
+}

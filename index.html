@@ -1,29 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8"> <!--tells the browser to use UTF-8 character encoding, which supports a wide range of characters from different languages. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--ensures that the webpage is responsive and scales properly on different devices, such as mobile phones and tablets. -->
     <title>Stacey Xu's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
-<button type="button">Stacey Xu</button>
-<button type="button">Character Art</button>
-<button type="button">Illustration</button>
-<button type="button">Comics</button>
-<button type="button">Life Drawing</button>
-<button type="button">About</button>
+    <link rel="stylesheet" href="style.css">
+
+<header>
+    
+
+    <div class="menu">
+    <button class="img-btn left-btn" onclick="handleClick()">
+  
+    <img src="images/home button.png" alt="home">
+    </button>
+    
+    <button class="img-btn" onclick="handleClick()">
+  
+        <img src="images/illustrations button.png" alt="illustrations">
+    </button>
+
+     <button class="img-btn" onclick="handleClick()">
+  
+        <img src="images/comics button.png" alt="Comics">
+    </button>
+
+     <button class="img-btn" onclick="handleClick()">
+  
+        <img src="images/life drawing button.png" alt="Life Drawing">
+    </button>
+
+    <button class="img-btn" onclick="handleClick()">
+  
+        <img src="images/about button.png" alt="Start">
+    </button>
+
+    <style>
+ .img-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+ 
+}
+
+  .img-btn img {
+    width: 200px;         
+    display: block;
+  }
+  .img-btn:hover img {
+    filter: brightness(1.15);   
+  }
+  .img-btn:active img {
+    transform: scale(0.95);    
+  }
+
+  .menu{
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+
+  .left-btn {
+   
+    margin-right: auto; 
+  }
+  
+</style>
+
+<script>
+  function handleClick() {
+    alert("Button clicked!");   / replace with what you want it to do */
+  }
+</script>
+    </div>
+   
+</header>
 
 </head>
 
 <body>
     <div>
-    <img src="./images/business card portfolio.png" alt="Character Art">
-    </div>
+    <img src="./images/business card portfolio.png" style="width: 100%; height: auto;" alt="Character Art">
+    </div> 
     <h2>Characters and Illustrations</h2>
-    <button type="button">See All</button>
-    <div>
-    
+  
+    <div class="see-all-button">
+          <button class="img-btn" onclick="handleClick()">
+  
+        <img src="images/see all button.png" alt="see all">
+    </button>
     </div>
-    <h2>Comics</h2>
-    <button type="button">See All</button>
+
+     
+    <!--creates a container for the character art images, which can be styled using CSS to control their layout and appearance-->
+    <div class="homegallery"> 
+        <img src="./images/antagonism.jpg" alt="Character Art 1" width="560" >
+        <img src="./images/rock concert.jpg" alt="Character Art 2" width="500">
+        <img src="./images/vehicle.jpg" alt="Character Art 3" width="475">  
+        <img src="./images/galentines.jpg" alt="Character Art 4" width="500">
+        <img src="./images/isolation.jpg" alt="Character Art 5" width="490">
+        <img src="./images/ipod touch.png" alt="Character Art 6" width="500">
+
+
+    </div>
+    
 </body>
 </html>
