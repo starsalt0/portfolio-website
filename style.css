@@ -77,97 +77,105 @@ h3 {
    
     margin-right: auto; 
   }
-  <!--character-->
-  .CharacterGallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 10px;
-    background-color: #c0e1ff;
-  }
+ 
 
-  .CharacterGallery img {
-    
-    width: 100%;
-    aspect-ratio: 1 / 0.5;
-    object-fit: contain;
-    display: block;
-  }
 
-   <!--environment-->
-  .EnvironmentGallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 10px;
-    background-color: #c0e1ff;
-  }
+.category .CharacterGallery {
+  columns: 3 260px;
+  column-gap: 12px;
+}
 
-  .EnvironmentGallery img {
-    
-    width: 100%;
-    aspect-ratio: 1 / 0.5;
-    object-fit: contain;
-    display: block;
-  }
-<!--comic-->
-    .ComicGallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 10px;
-    background-color: #c0e1ff;
-  }
+.category .CharacterGallery > * {
+  break-inside: avoid;
+  margin: 0 0 12px;
+}
 
-  .ComicGallery img {
-    
-    width: 100%;
-    aspect-ratio: 1 / 0.5;
-    object-fit: contain;
-    display: block;
-  }
+.category .CharacterGallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-  <!--cover-->
-      .CoverGallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 10px;
-    background-color: #c0e1ff;
-  }
 
-  .CoverGallery img {
-    
-    width: 100%;
-    aspect-ratio: 1 / 0.5;
-    object-fit: contain;
-    display: block;
-  }
 
-   <!--life-->
-        .LifeGallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 10px;
-    background-color: #c0e1ff;
-  }
+.category .EnvironmentGallery {
+  columns: 3 260px;
+  column-gap: 12px;
+}
 
-  .LifeGallery img {
-    
-    width: 100%;
-    aspect-ratio: 1 / 0.5;
-    object-fit: contain;
-    display: block;
-  }
+.category .EnvironmentGallery > * {
+  break-inside: avoid;
+  margin: 0 0 12px;
+}
 
-     <!--painting-->
-   .PaintingGallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-    gap: 10px;
-    background-color: #c0e1ff;
-  }
+.category .EnvironmentGallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
-  .PaintingGallery img {
-    
-    width: 100%;
-    aspect-ratio: 1 / 0.5;
-    object-fit: contain;
-    display: block;
-  }
+  .category .ComicGallery {
+  columns: 3 260px;
+  column-gap: 12px;
+}
+
+.category .ComicGallery > * {
+  break-inside: avoid;
+  margin: 0 0 12px;
+}
+
+.category .ComicGallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+ 
+    .category .CoverGallery {
+  columns: 3 260px;
+  column-gap: 12px;
+}
+
+.category .CoverGallery > * {
+  break-inside: avoid;
+  margin: 0 0 12px;
+}
+
+.category .CoverGallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+  
+  .category .LifeGallery {
+  columns: 3 260px;
+  column-gap: 12px;
+}
+
+.category .LifeGallery > * {
+  break-inside: avoid;
+  margin: 0 0 12px;
+}
+
+.category .LifeGallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+   
+  .category .PaintingGallery {
+  columns: 3 260px;
+  column-gap: 12px;
+}
+
+.category .PaintingGallery > * {
+  break-inside: avoid;
+  margin: 0 0 12px;
+}
+
+.category .PaintingGallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

@@ -65,7 +65,7 @@
         <figcaption>Character Art</figcaption>
          
     <div class="see-all-button">
-          <button class="img-btn" onclick="handleClick()">
+          <button class="img-btn" onclick="goTo('character-art')">
   
         <img src="images/see all button.png" alt="see all">
     </button>
@@ -78,7 +78,7 @@
         <figcaption>Environments</figcaption>
          
     <div class="see-all-button">
-          <button class="img-btn" onclick="handleClick()">
+          <button class="img-btn" onclick="goTo('environment-art')">
   
         <img src="images/see all button.png" alt="see all">
     </button>
@@ -92,7 +92,7 @@
         <figcaption>Comics</figcaption>
          
     <div class="see-all-button">
-          <button class="img-btn" onclick="handleClick()">
+          <button class="img-btn" onclick="goTo('comics')">
   
         <img src="images/see all button.png" alt="see all">
     </button>
@@ -105,7 +105,7 @@
         <figcaption>Book Covers</figcaption>
          
     <div class="see-all-button">
-          <button class="img-btn" onclick="handleClick()">
+          <button class="img-btn" onclick="goTo('book-covers')">
   
         <img src="images/see all button.png" alt="see all">
     </button>
@@ -118,7 +118,7 @@
         <figcaption>Life Drawing</figcaption>
          
     <div class="see-all-button">
-          <button class="img-btn" onclick="handleClick()">
+          <button class="img-btn" onclick="goTo('life-drawing')">
   
         <img src="images/see all button.png" alt="see all">
     </button>
@@ -131,7 +131,7 @@
         <figcaption>Paintings</figcaption>
          
     <div class="see-all-button">
-          <button class="img-btn" onclick="handleClick()">
+          <button class="img-btn" onclick="goTo('paintings')">
   
         <img src="images/see all button.png" alt="see all">
     </button>
@@ -143,7 +143,7 @@
 </section>
 
 
-<section class="category">
+<section class="category" id="character-art">
   <h3>Character Art</h3>
   <div class="CharacterGallery">
 
@@ -211,7 +211,7 @@
 </section>
 
 <!--environments category-->
-<section class="category">
+<section class="category" id="environment-art">
   <h3>Environments</h3>
   <div class="EnvironmentGallery">
    <a href="./images/galentines.jpg" data-lightbox="environment-art" data-title="Galentines Party">
@@ -234,7 +234,7 @@
 </section>
 
 <!--comics category-->
-<section class="category">
+<section class="category" id="comics">
   <h3>Comics</h3>
   <div class="ComicGallery">
    <a href="./images/comic1.PNG" data-lightbox="environment-art" data-title="Comic 1">
@@ -260,7 +260,7 @@
 </section>
 
 <!--books category-->
-<section class="category">
+<section class="category" id="book-covers">
   <h3>Book Covers</h3>
   <div class="CoverGallery">
    <a href="./images/book1.png" data-lightbox="environment-art" data-title="Book 1">
@@ -282,7 +282,7 @@
   </div>
 </section>
 <!--life drawing category-->
-<section class="category">
+<section class="category" id="life-drawing">
   <h3>Life Drawing</h3>
   <div class="LifeGallery">
    <a href="./images/sketch1.png" data-lightbox="environment-art" data-title="Sketch 1">
@@ -313,7 +313,7 @@
 </section>
 
 <!--painting category-->
-<section class="category">
+<section class="category" id="paintings">
   <h3>Paintings</h3>
   <div class="PaintingGallery">
    <a href="./images/a1.jpg" data-lightbox="environment-art" data-title="Painting 1">
@@ -348,5 +348,12 @@
 </section>
 
     <script src="lightbox-plus-jquery.js"></script>
+
+    <script>
+  function goTo(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+  }
+</script>
+
 </body>
 </html>
