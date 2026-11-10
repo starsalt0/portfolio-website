@@ -179,3 +179,28 @@ h3 {
   height: auto;
   display: block;
 }
+
+.footer{
+    margin-top: 40px;
+  padding: 30px 20px;
+  background-color: #98ceff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.footer-art{
+    width: 550px;
+    max-width: 90%;
+    height: auto;
+}
+
+.instagram-btn {
+  padding: 10px 28px;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 20px;
+  text-decoration: none;
+  border-radius: 999px;
+}
