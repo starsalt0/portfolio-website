@@ -52,22 +52,38 @@
 
 <body>
 
-  <nav class="navbar">
-    
-    <div class="logo">
+  <nav>
+
+        <ul class="sidebar">
+      <li onclick=hideSidebar()><a href='#'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f"><path d="M6.4,19L5,17.6L10.6,12L5,6.4L6.4,5L12,10.6L17.6,5L19,6.4L13.4,12L19,17.6L17.6,19L12,13.4L6.4,19Z"/></svg></a></li>
+      <li onclick=hideSidebar()><a href='#homegallery'>Home</a></li>
+      <li onclick=hideSidebar()><a href='#character-art'>Characters</a></li>
+      <li onclick=hideSidebar()><a href='#environment-art'>Environments</a></li>
+      <li onclick=hideSidebar()><a href='#comics'>Comics</a></li>
+      <li onclick=hideSidebar()><a href='#book-covers'>Book Covers</a></li>
+      <li onclick=hideSidebar()><a href='#life-drawing'>Life Drawing</a></li>
+      <li onclick=hideSidebar()><a href='#paintings'>Paintings</a></li>
+      <li onclick=hideSidebar()><a href='#process'>Process</a></li>
+      <li onclick=hideSidebar()><a href='#about'>About</a></li>
+      <li onclick=hideSidebar()><a href='#footer'>Contacts</a></li>
+    </ul>
+
+
+      <div class="logo">
       <img src="images/nametext.png" alt="logo" width="200">
     </div>
     <ul class="nav-links">
-      <li><a href='#homegallery'>Home</a></li>
-      <li><a href='#character-art'>Characters</a></li>
-      <li><a href='#environment-art'>Environments</a></li>
-      <li><a href='#comics'>Comics</a></li>
-      <li><a href='#book-covers'>Book Covers</a></li>
-      <li><a href='#life-drawing'>Life Drawing</a></li>
-      <li><a href='#paintings'>Paintings</a></li>
-      <li><a href='#process'>Process</a></li>
-      <li><a href='#about'>About</a></li>
-      <li><a href='#footer'>Contacts</a></li>
+      <li class="hideOnMobile"><a href='#homegallery'>Home</a></li>
+      <li class="hideOnMobile"><a href='#character-art'>Characters</a></li>
+      <li class="hideOnMobile"><a href='#environment-art'>Environments</a></li>
+      <li class="hideOnMobile"><a href='#comics'>Comics</a></li>
+      <li class="hideOnMobile"><a href='#book-covers'>Book Covers</a></li>
+      <li class="hideOnMobile"><a href='#life-drawing'>Life Drawing</a></li>
+      <li class="hideOnMobile"><a href='#paintings'>Paintings</a></li>
+      <li class="hideOnMobile"><a href='#process'>Process</a></li>
+      <li class="hideOnMobile"><a href='#about'>About</a></li>
+      <li class="hideOnMobile"><a href='#footer'>Contacts</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href='#'><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" height="24px" width="24px" fill="#1f1f1f"><path d="M3,18V16H21v2H3Zm0-5V11H21v2H3ZM3,8V6H21V8H3Z"/></svg></a></li>
     </ul>
 
   </nav>
@@ -406,7 +422,16 @@
 
 
 
-
+<script>
+  function showSidebar(){
+    const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'flex'; 
+  }
+  function hideSidebar(){
+     const sidebar = document.querySelector('.sidebar');
+    sidebar.style.display = 'none'; 
+  }
+</script>
 
 
     <script src="lightbox-plus-jquery.js"></script>
