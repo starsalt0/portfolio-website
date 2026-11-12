@@ -235,3 +235,44 @@ h3 {
     display: block;
     margin: auto;
   }
+
+
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #98ceff;
+    color:#ffffff;
+    padding: 15px 30px;
+    margin:0;
+    position: sticky;
+    top: 0; /* Required to tell the browser where to stick */
+    padding: 15px;
+    z-index: 1000; /* Keeps the navbar above other page elements */
+
+  }
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color:#000000;
+  text-decoration: none;
+
+}
+
+.nav-links a:hover {
+  color:aqua;
+  text-decoration: underline;
+}
+  
+.logo {
+  font-weight:800;
+  font-size: 20px;
+  
+}
