@@ -204,3 +204,34 @@ h3 {
   text-decoration: none;
   border-radius: 999px;
 }
+
+.About{
+    display: block;
+    gap: 10px;
+    background-color: #98ceff;
+    
+}
+
+.about-text {
+  font-size: min(5vw, 25px);
+}
+
+.profile-pic{
+  display: block;
+  margin: auto;
+}
+
+.Process{
+      display: grid;
+
+
+    background-color: #c0e1ff;
+}
+
+.Process img {
+    width: 60%;
+
+    object-fit: contain;
+    display: block;
+    margin: auto;
+  }
