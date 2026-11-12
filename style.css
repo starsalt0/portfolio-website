@@ -214,6 +214,7 @@ h3 {
 
 .about-text {
   font-size: min(5vw, 25px);
+  text-align: center;
 }
 
 .profile-pic{
@@ -270,9 +271,12 @@ h3 {
   color:aqua;
   text-decoration: underline;
 }
-  
-.logo {
-  font-weight:800;
-  font-size: 20px;
-  
+
+
+
+
+.splashtext {
+  display: flex;
+  justify-content: center;
+  background-color: #c0e1ff;
 }
