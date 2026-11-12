@@ -280,3 +280,13 @@ h3 {
   justify-content: center;
   background-color: #c0e1ff;
 }
+
+.splashtext img{
+  max-width: 100%;
+  height: auto;
+}
+
+.logo img{
+  max-width: 100%;
+  height: auto;
+}
